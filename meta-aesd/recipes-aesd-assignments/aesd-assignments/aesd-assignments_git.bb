@@ -49,5 +49,5 @@ do_install () {
 	install -d ${D}${sysconfdir}/init.d
 	install -m 0755 ${S}/init.d ${D}${sysconfdir}/init.d
 	install -d ${D}${libdir}
-	oe_soinstall "/lib/x86_64-linux-gnu/libgcc_s.so.1" ${D}${libdir}
+	install "/lib/x86_64-linux-gnu/libgcc_s.so.1" ${D}${libdir}
 }
